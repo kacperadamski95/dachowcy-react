@@ -1,0 +1,112 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--font-color--primary);
+}
+
+body {
+    position: relative;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {    
+    .navigation {
+        height: var(--navigation--height);
+        padding-left: var(--space--xs);
+        padding-right: var(--space--xl);
+    }
+
+    .menu_links {
+        display: none; 
+    }
+
+    .logo-picture {
+        height: 8rem;
+        width: 10rem;
+        margin-top: var(--space--s);
+    }
+
+    .hamburger--icon {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .icon--close {
+        height: 0.1rem;
+        width: 0.1rem;
+        opacity: 0;
+    }
+
+    .icon--active {
+        height: 5rem;
+        width: auto;
+        opacity: 1;
+    }
+
+    .icon--inactive {
+        display: none;
+    }
+
+    .menu-hidden {
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 0;
+        overflow: hidden;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+
+    .menu-active {
+        width: 100vw;
+        height: calc(100vh - var(--navigation--height));
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(/images/hidden-menu-background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;  
+        right: 0;
+        top: var(--navigation--height);
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .menu-active a {
+        color: white;
+    }
+}    
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .menu-hidden,
+    .hamburger--icon,
+    .icon--close {
+        display: none;
+    }
+
+    .logo-picture {
+        height: 12.5rem;
+        width: auto;
+        margin-left: 2rem;
+    }
+
+    .menu_links a {
+        padding: 2.5rem;
+        font-size: 1.5vw;
+    }
+
+    .menu_links a:last-of-type {
+        margin-right: 2.5rem;
+    }
+}

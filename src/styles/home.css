@@ -1,0 +1,104 @@
+li::marker {
+    color: rgb(11,142,54, 1);
+}
+
+a {
+    text-decoration:none;
+    font-style: normal;
+}
+
+.about-us {
+    padding-top: var(--space--l);
+    padding-bottom: var(--space--xl);
+    padding-left: var(--space--l);
+    padding-right: var(--space--l);
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .main-page__picture {
+        display: none;
+    }
+
+    .about-us {
+        background-color: var(--font-color--primary);
+        border-radius: 1rem;
+    }
+
+    .about-us p, 
+    .about-us li {
+        font-size: 1.4rem;
+    }
+
+    .main-page {
+        padding-top: var(--space--xxl);
+        padding-bottom: 10rem;
+        padding-left: var(--space--m);
+        padding-right: var(--space--m);
+    }
+
+   .mobile-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+    .mobile-main-container h1 {
+        padding-bottom: var(--space--xxl);
+    }
+
+    ul {
+        padding-left: var(--space--m);
+    }
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .main--router {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-page {
+        background-color: var(--font-color--primary);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 81%;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        border-radius: 2rem;
+    }
+
+    .main-page__picture {
+        width: 55rem;
+        height: 55rem;
+        margin-top: 5rem;
+    }
+
+    .mobile-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .about-us {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10rem;
+        justify-content: center;
+    }
+
+    .text--information {
+        width: 65rem;
+    }
+
+    ul {
+        padding-left: var(--space--l);
+    }
+}
