@@ -3,7 +3,7 @@
     margin:auto;
 }
 
-[className="btn btn-lg btn-primary"] {
+[class="btn btn-lg btn-primary"] {
     display: none;
 }
 

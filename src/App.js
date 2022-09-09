@@ -3,6 +3,7 @@ import Header from './Header';
 import Home from './Home';
 import Offer from './Offer'
 import Footer from './Footer';
+import Contact from './Contact'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
 
 function App() {
@@ -12,9 +13,14 @@ function App() {
           <Header />
           <main className="main--router">
           <Switch>
-            <Route path="/">
-              {/* <Home /> */}
-              <Offer />
+            <Route exact path="/Home">
+             <Home />
+            </Route>
+            <Route path="/Offer">
+             <Offer />
+            </Route>
+            <Route path="/Contact">
+             <Contact />
             </Route>
           </Switch>
           </main>

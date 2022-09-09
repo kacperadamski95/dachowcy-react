@@ -54,7 +54,9 @@ body {
         display: none;
     }
 
-    .menu-hidden {
+    .menu-hidden,
+    .menu-toggled main,
+    .menu-toggled footer {
         width: 0.1rem;
         height: 0.1rem;
         opacity: 0;
@@ -71,7 +73,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-image: url(/images/hidden-menu-background.jpg);
+        background-image: url('../images/hidden-menu-background.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
