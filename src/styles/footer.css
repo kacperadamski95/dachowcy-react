@@ -15,7 +15,7 @@
 a:hover,
 a:focus,
 a:active {
-    color: rgb(11,142,54, 1);
+    color: var(--logo-background--color);
     cursor: pointer;
 }
 

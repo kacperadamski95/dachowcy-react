@@ -1,14 +1,25 @@
 import React from 'react';
+import MaterialTile from '../components/MaterialTile'
+
+
 const Offer = () => {
+    const woodImage = require("../images/Offer-images/wood.png");
+    const tileImage = require("../images/Offer-images/tile.png");
+    const tinewareImage = require("../images/Offer-images/tinware.png");
+    const mugImage = require("../images/Offer-images/mug.png");
+    const flashingsImage = require("../images/Offer-images/flashings.png");
+    const windowsImage = require("../images/Offer-images/windows.png");
+
     return ( 
     <section id="offer" className="background--router">
         <h1>Kompleksowa budowa dachów</h1>
         <div className="desktop--row">
-            <div className="material--wood">
-                <div>
-                    <img src={require("./images/wood.png")} alt="wood logo"></img>
-                    <h2>Drewno na dachu</h2>
-                </div>
+            <MaterialTile
+                materialClass="material--wood"
+                materialIconSrc={woodImage}
+                materialIconAlt="wood logo"
+                materialTitle="Drewno na dachu"
+                >
                 <ul>
                     <li>więźba dachowa – budowa nowych konstrukcji, remont i wymiana zużytych elementów</li>
                     <li>łaty i kontrłaty – ich odpowiedni montaż jest gwarancją prawidłowego umocowania dachówki, blachodachówki
@@ -16,12 +27,13 @@ const Offer = () => {
                     <li>podbitka – to taka kropka nad „i” jest w dużej mierze elementem wpływający na estetykę dachu. Dodatkowo
                         dociepla dom i chroni więźbę przed niekorzystnym wpływem warunków atmosferycznych</li>
                 </ul>
-            </div>
-            <div className="material--tile">
-                <div>
-                    <img src={require("./images/tile.png")} alt="tile logo"></img>
-                    <h2>Dachówka</h2>
-                </div>
+            </MaterialTile>
+            <MaterialTile
+                materialClass="material--tile"
+                materialIconSrc={tileImage}
+                materialIconAlt="tile logo"
+                materialTitle="Dachówka"
+                >
                 <p>
                     Na rynku obecnych jest wiele rodzajów dachówki ceramicznej i cementowej.
                     Jest to m.in.
@@ -39,12 +51,13 @@ const Offer = () => {
                     Zgodnie z życzeniem Klienta
                     oferujemy krycie każdą z nich.
                 </p>
-            </div>
-            <div className="material--tinware">
-                <div>
-                    <img src={require("./images/tinware.png")} alt="tinware logo"></img>
-                    <h2>Blacha</h2>
-                </div>
+            </MaterialTile>
+            <MaterialTile
+                materialClass="material--tinware"
+                materialIconSrc={tinewareImage}
+                materialIconAlt="tinware logo"
+                materialTitle="Blacha"
+                >
                 <p>
                     Wykonujemy pokrycia dachowe ze wszystkich dostępnych na rynku rodzajów blach, takich jak:
                 </p>
@@ -55,12 +68,13 @@ const Offer = () => {
                     <li>blachodachówka z posypką</li>
                     <li>blacha trapezowa</li>
                 </ul>
-            </div>
-            <div className="material--mug">
-                <div>
-                    <img src={require("./images/mug.png")} alt="mug logo"></img>
-                    <h2>Papa</h2>
-                </div>
+            </MaterialTile>
+            <MaterialTile
+                materialClass="material--mug"
+                materialIconSrc={mugImage}
+                materialIconAlt="flashings logo"
+                materialTitle="Papa"
+                >
                 <p>
                     Oferujemy krycie dachów papą oraz hydroizolacje z użyciem m.in.
                 </p>
@@ -70,24 +84,26 @@ const Offer = () => {
                     <li>nawierzchniowej</li>
                     <li>styropapy</li>
                 </ul>
-            </div>
-            <div className="material--flashings">
-                <div>
-                    <img src={require("./images/flashings.png")} alt="flashings logo"></img>
-                    <h2>Obróbki blacharskie</h2>
-                </div>
+            </MaterialTile>
+            <MaterialTile
+                materialClass="material--flashings"
+                materialIconSrc={flashingsImage}
+                materialIconAlt="flashings logo"
+                materialTitle="Obróbki blacharskie"
+                >
                 <p>
                     Dbałość o szczegóły w wykonaniu wszystkich elementów dachu od początku do końca jest gwarantem
                     solidności,
                     trwałości oraz bezproblemowej eksploatacji zbudowanych przez nas dachów.
                     Oferujemy profilowanie i montaż niezbędnych obróbek blacharskich.
                 </p>
-            </div>
-            <div className="material--windows">
-                <div>
-                    <img src={require("./images/windows.png")} alt="windows logo"></img>
-                    <h2>Reszta infrastruktury dachowej</h2>
-                </div>
+            </MaterialTile>
+            <MaterialTile
+                materialClass="material--windows"
+                materialIconSrc={windowsImage}
+                materialIconAlt="windows logo"
+                materialTitle="Reszta infrastruktury dachowej"
+                >
                 <p>
                     Montujemy:
                 </p>
@@ -99,7 +115,7 @@ const Offer = () => {
                     <li>stopnie kominiarskie</li>
                     <li>śniegołapy</li>
                 </ul>
-            </div>
+            </MaterialTile>
         </div>
     </section>
     );

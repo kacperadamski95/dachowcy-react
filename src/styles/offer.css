@@ -1,3 +1,9 @@
+.desktop--row > div:hover {
+    background-color: #EEF2E6;
+    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.9);
+}
+
+
 #offer div img {
     width: 7rem;
     height: 7rem;

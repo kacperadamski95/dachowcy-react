@@ -17,7 +17,8 @@ h1 {
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .main--router {
-        background-image: url('../images/ezgif.com-gif-maker.avif');
+        background-image: url('../images/Subpages-images/ezgif.com-gif-maker.avif');
+        /* background-image: url('../images/Subpages-images/Milosna_2.jpg'); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -59,7 +60,8 @@ h1 {
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
     .main--router {
-        background-image: url('../images/roof-opacity-desktop.avif');
+        background-image: url('../images/Subpages-images/roof-opacity-desktop.avif');
+        /* background-image: url('../images/Subpages-images/Milosna_2.jpg'); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
