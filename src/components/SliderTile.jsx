@@ -6,7 +6,6 @@ const SliderTile = () => {
   const arr = [
         {
           image: require("../images/Realizations-images/kwidzyn/Milosna_1.jpg"),
-          text: "Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna",
         },
         {
             image: require("../images/Realizations-images/kwidzyn/Milosna_2.jpg"),
@@ -43,14 +42,18 @@ const SliderTile = () => {
       return (
         <>
             <div className="container">
-                <img src={arr[value].image} alt={arr[value].id} />
-                <div>
-                    <button type="button" onClick={() => value === 0 ? setValue(10) : setValue(value - 1)}>Next</button>
-                    <button type="button" onClick={() => value === 10 ? setValue(0) : setValue(value + 1)}>Previous</button>
-
+                <div className='buttons'>
+                    <button type="button" className='left__button' onClick={() => value === 0 ? setValue(arr.length - 1) : setValue(value - 1)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
+                    </button>
+                    <button type="button" className='right__button' onClick={() => value === arr.length - 1 ? setValue(0) : setValue(value + 1)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                    </button>
+                    
                 </div>
+                <img src={arr[value].image} alt={arr[value].id} />
+            <p>Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna</p>
             </div>
-            <h2>{arr[value].text}</h2>
         </>
     );
 }

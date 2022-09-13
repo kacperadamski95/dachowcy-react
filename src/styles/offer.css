@@ -24,7 +24,7 @@
     border-radius: 1rem;
 }
 
-#offer div > div > div {
+.material--title {
     display: flex;
     align-items: center;
     padding-bottom: var(--space--s);

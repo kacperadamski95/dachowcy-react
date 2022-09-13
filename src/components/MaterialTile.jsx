@@ -4,7 +4,7 @@ const MaterialTile = (props) => {
 
     return (
         <div className={props.materialClass}>
-            <div>
+            <div className="material--title">
                 <img 
                     src={props.materialIconSrc} 
                     alt={props.materialIconAlt}>    

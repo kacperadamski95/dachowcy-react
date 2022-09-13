@@ -6,9 +6,11 @@ const Realizations = () => {
     
 
     return (
-        <section className='background--router'>
+        <section id="realizations" className="background--router">
+            <div className='slider--containter'>
             <h1>Realizacje</h1>
             <SliderTile />
+            </div>
         </section>
     );
 }
