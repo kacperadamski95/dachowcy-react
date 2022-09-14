@@ -112,6 +112,7 @@ const Offer = () => {
                     console.log()
                     return (
                         <MaterialTile
+                            key={index}
                             materialClass = { material.materialClass }
                             materialIconSrc = { material.materialIcon }
                             materialIconAlt = { material.materialAlt } 

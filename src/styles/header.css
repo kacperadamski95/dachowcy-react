@@ -7,6 +7,7 @@
 
 .header {
     position: sticky;
+    z-index: 3;
     top: 0;
     background-color: var(--font-color--primary);
 }
@@ -78,9 +79,9 @@ body {
         background-position: center;
         background-size: cover;
         position: absolute;  
+        z-index: 3;
         right: 0;
         top: var(--navigation--height);
-        z-index: 1;
         overflow: hidden;
     }
 

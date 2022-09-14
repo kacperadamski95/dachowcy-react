@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
-import Home from './Pages/Home';
-import Offer from './Pages/Offer'
+import Home from './pages/home';
+import Offer from './pages/offer'
 import Footer from './components/Footer';
-import Contact from './Pages/Contact'
-import Realizations from './Pages/Realizations'
+import Contact from './pages/contact'
+import Realizations from './pages/realizations'
+import Realization1 from './pages/realizations-subpages/realization1'
+import Realization2 from './pages/realizations-subpages/realization2'
+import Realization3 from './pages/realizations-subpages/realization3'
+import Realization4 from './pages/realizations-subpages/realization4'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
 
 function App() {
@@ -14,17 +18,29 @@ function App() {
           <Header />
           <main className="main--router">
           <Switch>
-            <Route exact path="/Home">
+            <Route exact path="/home">
              <Home />
             </Route>
-            <Route path="/Offer">
+            <Route path="/offer">
              <Offer />
             </Route>
-            <Route path="/Contact">
+            <Route path="/contact">
              <Contact />
             </Route>
-            <Route path="/Realizations">
+            <Route path="/realizations">
              <Realizations />
+            </Route>
+            <Route path="/realization1">
+             <Realization1 />
+            </Route>
+            <Route path="/realization2">
+             <Realization2 />
+            </Route>
+            <Route path="/realization3">
+             <Realization3 />
+            </Route>
+            <Route path="/realization4">
+             <Realization4 />
             </Route>
           </Switch>
           </main>

@@ -1,3 +1,7 @@
+.realization__links {
+  z-index: 1;
+}
+
 #realizations h1,
 #realizations p {
   text-align: center;
@@ -8,8 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   height: auto;
+  position: relative;
   border-radius: 1rem;
   background: var(--font-color--primary);
   color: var(--font-color--secondary);
@@ -26,6 +30,7 @@
   padding: 0;
   position: absolute;
   left: 0;
+  z-index: 2;
 }
 
 .right__button {
@@ -34,6 +39,7 @@
   padding: 0;
   position: absolute;
   right: 0;
+  z-index: 2;
 }
 
 .right__button svg {
@@ -103,7 +109,7 @@ button:active {
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
   #realizations {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 10rem;
     background-color: var(--font-color--primary);
     display: flex;
@@ -118,6 +124,13 @@ button:active {
 
   #realizations h1 {
     color: var(--font-color--secondary);
+  }
+
+  .slider--containter {
+    padding-top: var(--space--l);
+    padding-bottom: var(--space--xl);
+    padding-left: var(--space--l);
+    padding-right: var(--space--l);
   }
 
   .container {
