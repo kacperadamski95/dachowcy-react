@@ -1,9 +1,10 @@
 import React from 'react';
 const Home = () => {
     return (
-        <section className="main-page background--router">
+        <>
+        <h1>O nas</h1>
+        <section id="home" className="main-page background--router">
             <div className="mobile-main-container">
-                <h1>O nas</h1>
                 <div className="about-us">
                     <div className="text--information">
                         <p>Dachy to nasza specjalność. Remontujemy i budujemy dachy od wielu lat.
@@ -33,6 +34,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 }
 

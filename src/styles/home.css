@@ -30,7 +30,7 @@ a {
         font-size: 1.4rem;
     }
 
-    .main-page {
+    #home {
         padding-top: var(--space--xxl);
         padding-bottom: 10rem;
         padding-left: var(--space--m);
@@ -57,6 +57,7 @@ a {
 @media only screen and (min-width: 769px) {
     .main--router {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -68,7 +69,6 @@ a {
         justify-content: center;
         align-items: center;
         width: 81%;
-        margin-top: 10rem;
         margin-bottom: 10rem;
         border-radius: 2rem;
     }

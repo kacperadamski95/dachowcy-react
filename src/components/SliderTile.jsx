@@ -25,7 +25,7 @@ const SliderTile = (props) => {
                     src={props.arrayOfPictures[value]} 
                     alt={props.sliderImagesAlts[value]} 
                 />
-                {props.sliderDescription}
+                <p>{props.sliderDescription}</p>
             </Link>
             </div>
         </>

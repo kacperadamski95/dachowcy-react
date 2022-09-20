@@ -64,10 +64,6 @@ ul {
         line-height: 2.5rem;
         margin-bottom: 4rem;
     }
-
-    #offer h1 {
-        padding-bottom: 3rem;
-    }
 }    
 
 /* Desktop and tablet */
@@ -80,13 +76,6 @@ ul {
     #offer p,
     #offer li {
         font-size: var(--font-size--base);
-    }
-
-    #offer h1 {
-        text-align: center;
-        color: var(--font-color--primary);
-        padding-top: 10rem;
-        padding-bottom: 10rem;
     }
 
     .material--wood,

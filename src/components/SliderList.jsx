@@ -25,7 +25,7 @@ const SliderList = [
                         "kwidzyn10",
                         "kwidzyn11",
                         ],               
-    sliderDescription: <p>Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna</p>
+    sliderDescription: 'Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna'
     },
     {sliderAnchorHref: "./realization2",
     sliderImages: [require("../images/Realizations-images/chelmno/chelmno1.jpg"),
@@ -41,7 +41,7 @@ const SliderList = [
                         "chelmno5",
                         "chelmno6",
                     ],
-    sliderDescription: <p>Chełmno - Szkoła katolicka - remont, wymiana poszycia dachowego, dach wielopoziomowy, blachodachówka na rąbek stojący</p>
+    sliderDescription: 'Chełmno - Szkoła katolicka - remont, wymiana poszycia dachowego, dach wielopoziomowy, blachodachówka na rąbek stojący'
     },
     {sliderAnchorHref: "./realization3",
     sliderImages: [require("../images/Realizations-images/pruszcz-gdanski/pruszcz1.jpg"),
@@ -77,7 +77,7 @@ const SliderList = [
                         "pruszcz15",
                         "pruszcz16",
                 ],
-    sliderDescription: <p>Pruszcz Gdański - Komenda Powiatowa Policji - budowa więźby dachowej, dachówka ceramiczna karpiówka</p>   
+    sliderDescription: 'Pruszcz Gdański - Komenda Powiatowa Policji - budowa więźby dachowej, dachówka ceramiczna karpiówka'
     },      
     {sliderAnchorHref: "./realization4",
     sliderImages: [require("../images/Realizations-images/sztutowo/sztutowo1.jpg"),
@@ -101,7 +101,7 @@ const SliderList = [
                         "sztutowo9",
                         "sztutowo10",
                     ],                  
-    sliderDescription: <p>Sztutowo - Polomarket - budowa więźby dachowej, dachówka ceramiczna, podbitka drewniana</p>      
+    sliderDescription: 'Sztutowo - Polomarket - budowa więźby dachowej, dachówka ceramiczna, podbitka drewniana'
     }
 ]
  

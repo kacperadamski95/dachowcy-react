@@ -1,15 +1,23 @@
 import React from 'react';
+import SliderList from '../../components/SliderList';
 const realization2 = () => {
-    return ( 
-        <section className="background--router">
-        <h1>Realizacja 2</h1>
-        <div className="desktop--row">
-            <div>
-                <span>cojest</span>
+    return (
+        <section className="background--router background--realizations">
+            <h1>{SliderList[1].sliderDescription}</h1>
+            <div className="realizations--images">
+                {SliderList[1].sliderImages.map((src) => {
+                    return (
+                        <img
+                            src={src}
+                        >
+                        </img>
+                    )
+                })}
+
             </div>
-        </div>
-    </section>
-     );
+        </section>
+    );
 }
- 
+
 export default realization2;
+

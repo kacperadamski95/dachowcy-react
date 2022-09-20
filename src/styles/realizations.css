@@ -2,21 +2,21 @@
   z-index: 1;
 }
 
-#realizations h1,
 #realizations p {
   text-align: center;
 }
 
+.container p {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
   position: relative;
   border-radius: 1rem;
-  background: var(--font-color--primary);
+  background: #EEF2E6;
   color: var(--font-color--secondary);
+  margin-bottom: 3rem;
 }
 
 .container img {
@@ -59,6 +59,15 @@ button:active {
   transform: scale(1.02);
 }
 
+.realizations--images img {
+  width: 100%; 
+  height: auto;
+}
+
+.background--realizations {
+  background-color: var(--font-color--primary);
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
@@ -69,11 +78,6 @@ button:active {
     padding-right: var(--space--m);
   }
   
-  #realizations h1 {
-    color: var(--font-color--primary);
-    padding-bottom: var(--space--xxl);
-  }
-  
   .slider--containter {
     display: flex;
     flex-direction: column;
@@ -81,7 +85,6 @@ button:active {
     border-radius: 1rem;
     background-color: var(--font-color--primary);
     padding-top: var(--space--xxl);
-    padding-bottom: 10rem;
     padding-left: var(--space--m);
     padding-right: var(--space--m);
   }
@@ -103,53 +106,51 @@ button:active {
   .right__button {
     top: 35%;
   }
-
 }
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
   #realizations {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    background-color: var(--font-color--primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 81%;
-    margin-top: 10rem;
     margin-bottom: 10rem;
     border-radius: 2rem;
   }
 
-  #realizations h1 {
-    color: var(--font-color--secondary);
-  }
-
   .slider--containter {
-    padding-top: var(--space--l);
-    padding-bottom: var(--space--xl);
-    padding-left: var(--space--l);
-    padding-right: var(--space--l);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 250rem;
+    margin-bottom: 13rem;
+    background-color: var(--font-color--primary);
+    border-radius: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .container {
-    width: 48rem;
-    max-width: 48rem;
+    width: 60rem;
+    max-width: 60rem;
   }
 
   .container img {
-    width: 48rem;
-    height: 27rem;
+    width: 100%;
+    height: auto;
   }
 
   .buttons {
-    width: 48rem;
+    width: 60rem;
   }
 
   .left__button,
   .right__button {
-    top: 12rem;
+    top: 14rem;
   }
   
 }
