@@ -23,7 +23,9 @@ const Offer = () => {
             materialTitle: "Dachówka",
             materialDescription:
             <>
-                <p>Na rynku obecnych jest wiele rodzajów dachówki ceramicznej i cementowej.Jest to m.in.</p>
+                <p>Na rynku obecnych jest wiele rodzajów dachówki ceramicznej i cementowej.
+                <br></br>
+                    Jest to m.in.</p>
                 <ul>
                     <li>karpiówka</li>
                     <li>dachówka klasztorna</li>
@@ -93,8 +95,6 @@ const Offer = () => {
                 <p>Montujemy:</p>
                 <ul>
                     <li>okna i wyłazy dachowe</li>
-                    <li>okna i wyłazy dachowe</li>
-                    <li>okna i wyłazy dachowe</li>
                     <li>kominki wentylacyjne</li>
                     <li>stopnie kominiarskie</li>
                     <li>śniegołapy</li>
@@ -109,7 +109,6 @@ const Offer = () => {
             { 
                 // material = materialsList[index]
                 materialsList.map((material, index) => {
-                    console.log()
                     return (
                         <MaterialTile
                             key={index}

@@ -18,7 +18,10 @@ function App() {
           <Header />
           <main className="main--router">
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/">
+             <Home />
+            </Route>
+            <Route path="/home">
              <Home />
             </Route>
             <Route path="/offer">

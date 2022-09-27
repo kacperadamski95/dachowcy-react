@@ -1,4 +1,5 @@
 :root {
+    --theme--color: rgba(255,255,255, 1);
     --background-color--primary: rgba(255,255,255, 0.9);
     --background-color--secondary: rgba(255,255,255, 0.7);
     --background-color--tertiary: rgba(0, 0, 0, 0.6);

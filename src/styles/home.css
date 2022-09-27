@@ -63,28 +63,24 @@ a {
     }
     
     .main-page {
-        background-color: var(--font-color--primary);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 13rem;
         width: 81%;
-        margin-bottom: 10rem;
-        border-radius: 2rem;
     }
-
+    
     .main-page__picture {
         width: 55rem;
         height: 55rem;
         margin-top: 5rem;
     }
-
+    
     .mobile-main-container {
+        background-color: var(--font-color--primary);
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        border-radius: 2rem;
     }
 
     .about-us {

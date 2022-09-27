@@ -2,8 +2,8 @@ import React from 'react';
 const Home = () => {
     return (
         <>
-        <h1>O nas</h1>
         <section id="home" className="main-page background--router">
+        <h1>O nas</h1>
             <div className="mobile-main-container">
                 <div className="about-us">
                     <div className="text--information">
