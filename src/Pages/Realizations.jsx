@@ -6,7 +6,7 @@ import SliderList from '../components/SliderList';
 const Realizations = () => {
 
     return (
-        <section id="realizations" className="background--router">
+        <section id="realizations" className="section--background">
             <h1>Realizacje</h1>
             <div className="slider--containter">
             {
@@ -14,7 +14,7 @@ const Realizations = () => {
                     return (
                         <SliderTile 
                         key={index}
-                        sliderAnchorHrefs = { slider.sliderAnchorHref }
+                        realizationsLink = { slider.sliderAnchorHref }
                         numberOfPictures = { slider.sliderImages.length }
                         arrayOfPictures = { slider.sliderImages }
                         sliderDescription = { slider.sliderDescription }

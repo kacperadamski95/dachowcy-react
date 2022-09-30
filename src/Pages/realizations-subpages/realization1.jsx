@@ -1,20 +1,19 @@
 import React from 'react';
 import SliderList from '../../components/SliderList';
 const realization1 = () => {
+    const {sliderDescription, sliderImages, sliderImagesAlts } = SliderList[0];
     return (
-        <section className="background--router background--realizations">
-            <h1>{SliderList[0].sliderDescription}</h1>
+        <section className="section--background background--realizations">
+            <h1>{sliderDescription}</h1>
             <div className="realizations--images">
-                {SliderList[0].sliderImages.map((src) => {
-                    return (
-                        <img
-                            src={src}
-                        >
-                        </img>
-                    )
-                })}
-                
-
+            {sliderImages.map((src, index) => {
+                return (
+                    <img
+                        src={src}
+                        alt={sliderImagesAlts[index]}>
+                    </img>
+                )
+            })}
             </div>
         </section>
     );
@@ -22,3 +21,5 @@ const realization1 = () => {
 
 export default realization1;
 
+
+    

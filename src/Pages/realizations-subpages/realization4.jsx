@@ -1,19 +1,19 @@
 import React from 'react';
 import SliderList from '../../components/SliderList';
 const realization4 = () => {
+    const {sliderDescription, sliderImages, sliderImagesAlts } = SliderList[3];
     return (
-        <section className="background--router background--realizations">
-            <h1>{SliderList[3].sliderDescription}</h1>
+        <section className="section--background background--realizations">
+            <h1>{sliderDescription}</h1>
             <div className="realizations--images">
-                {SliderList[3].sliderImages.map((src) => {
-                    return (
-                        <img
-                            src={src}
-                        >
-                        </img>
-                    )
-                })}
-
+            {sliderImages.map((src, index) => {
+                return (
+                    <img
+                        src={src}
+                        alt={sliderImagesAlts[index]}>
+                    </img>
+                )
+            })}
             </div>
         </section>
     );

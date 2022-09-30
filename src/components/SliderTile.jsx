@@ -18,7 +18,7 @@ const SliderTile = (props) => {
                     
                 </div>
             <Link 
-                to={props.sliderAnchorHrefs}
+                to={props.realizationsLink}
                 className='realization__links'
             >
                 <img 

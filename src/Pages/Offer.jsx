@@ -103,9 +103,9 @@ const Offer = () => {
         }
     ]
     return ( 
-    <section id="offer" className="background--router">
+    <section id="offer" className="section--background">
         <h1>Kompleksowa budowa dachów</h1>
-        <div className="desktop--row">
+        <div className="offer__tiles">
             { 
                 // material = materialsList[index]
                 materialsList.map((material, index) => {

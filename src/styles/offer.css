@@ -1,4 +1,4 @@
-.desktop--row > div:hover {
+.offer__tiles > div:hover {
     background-color: #EEF2E6;
     box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.9);
 }
@@ -88,7 +88,7 @@ ul {
         width: 40rem;
     }
 
-    .desktop--row {
+    .offer__tiles {
         display: flex;
         flex-direction: row;
         justify-content: center;

@@ -2,10 +2,10 @@ import React from 'react';
 const Home = () => {
     return (
         <>
-        <section id="home" className="main-page background--router">
+        <section id="home" className="main-page section--background">
         <h1>O nas</h1>
-            <div className="mobile-main-container">
-                <div className="about-us">
+            <div className="main--container">
+                <article className="about-us">
                     <div className="text--information">
                         <p>Dachy to nasza specjalność. Remontujemy i budujemy dachy od wielu lat.
                             Jesteśmy rodzinną firmą, działająca głównie na terenie woj. pomorskiego,
@@ -31,7 +31,7 @@ const Home = () => {
                         </ul>
                     </div>
                         <img className="main-page__picture" src={require("../images/Subpages-images/roof.avif")} alt=""></img>
-                </div>
+                </article>
             </div>
         </section>
         </>

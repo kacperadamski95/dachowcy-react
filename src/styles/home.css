@@ -37,13 +37,13 @@ a {
         padding-right: var(--space--m);
     }
 
-   .mobile-main-container {
+   .main--container {
     display: flex;
     flex-direction: column;
     align-items: center;
    }
 
-    .mobile-main-container h1 {
+    .main--container h1 {
         padding-bottom: var(--space--xxl);
     }
 
@@ -73,7 +73,7 @@ a {
         margin-top: 5rem;
     }
     
-    .mobile-main-container {
+    .main--container {
         background-color: var(--font-color--primary);
         display: flex;
         flex-direction: column;
@@ -84,10 +84,10 @@ a {
     }
 
     .about-us {
-        display: flex;
         flex-wrap: wrap;
         gap: 10rem;
         justify-content: center;
+        display: flex;
     }
 
     .text--information {
