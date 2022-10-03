@@ -12,7 +12,14 @@ html {
 h1 {
     text-align: center;
     font-weight: var(--font-weight--normal);
-    color: var(--font-color--primary);
+    color: var(--color--primary);
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--logo-theme--color);
+    cursor: pointer;
 }
 
 
@@ -27,11 +34,11 @@ h1 {
 
     h1 {
         font-size: var(--font-size__h1--mobile);
-        padding-bottom: 3rem;
+        padding-bottom:var(--space--xxl);
     }
 
     h2 {
-        font-size: var(--font-size__h2--mobile);
+        font-size: var(--font-size__h2);
     }
 
     p {
@@ -44,7 +51,7 @@ h1 {
 
     a {
        font-size: var(--font-size__a--mobile);
-       color: var(--font-color--secondary);
+       color: var(--color--secondary);
     }
 
     input {
@@ -73,7 +80,7 @@ h1 {
     }
 
     h2 {
-        font-size: var(--font-size__h2--desktop);
+        font-size: var(--font-size__h2);
     }
 
     p {
@@ -86,7 +93,7 @@ h1 {
 
     a {
         font-size: var(--font-size__a--desktop);
-        color: var(--font-color--secondary);
+        color: var(--color--secondary);
     }
 
     input {

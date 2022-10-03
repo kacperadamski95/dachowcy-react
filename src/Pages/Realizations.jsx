@@ -1,6 +1,6 @@
 import React from 'react';
 import SliderTile from '../components/SliderTile';
-import SliderList from '../components/SliderList';
+import sliderData from '../data/sliderData';
 
 
 const Realizations = () => {
@@ -10,11 +10,11 @@ const Realizations = () => {
             <h1>Realizacje</h1>
             <div className="slider--containter">
             {
-                SliderList.map((slider, index) => {
+                sliderData.map((slider, index) => {
                     return (
                         <SliderTile 
                         key={index}
-                        realizationsLink = { slider.sliderAnchorHref }
+                        realizationLink = { slider.sliderAnchorHref }
                         numberOfPictures = { slider.sliderImages.length }
                         arrayOfPictures = { slider.sliderImages }
                         sliderDescription = { slider.sliderDescription }

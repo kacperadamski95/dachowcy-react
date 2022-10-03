@@ -16,7 +16,7 @@
 .material--mug,
 .material--flashings,
 .material--windows {
-    background-color: var(--font-color--primary);
+    background-color: var(--color--primary);
     padding-top: var(--space--l);
     padding-bottom: var(--space--xl);
     padding-left: var(--space--l);

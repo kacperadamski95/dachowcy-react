@@ -12,13 +12,6 @@
     font-style: normal;
 }
 
-a:hover,
-a:focus,
-a:active {
-    color: var(--logo-background--color);
-    cursor: pointer;
-}
-
 a:focus {
     text-decoration: underline;
 }
@@ -53,7 +46,7 @@ a:focus {
 
     .localization,
     .email {
-        padding-bottom: 1.5rem;
+        padding-bottom: var(--space--m);
     }
 }   
 
@@ -63,7 +56,7 @@ a:focus {
     .footer {
         justify-content: space-around;
         flex-wrap: wrap;
-        padding: 2.5rem;;
+        padding:var(--space--xl);;
     }
 
     .footer div {
@@ -71,14 +64,12 @@ a:focus {
     }
 
     .footer a {
-        font-size: var(--font-size__h2--desktop);
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        font-size: var(--font-size__h2);
+        padding-top:var(--space--xl);
+        padding-bottom:var(--space--xl);
     }
 
     .footer img {
-        width: 5.12rem;
-        height: 5.12rem;
         margin-right: var(--space--m);
     }
 }

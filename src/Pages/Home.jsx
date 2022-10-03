@@ -30,7 +30,7 @@ const Home = () => {
                             <li>demontaż eternitu</li>
                         </ul>
                     </div>
-                        <img className="main-page__picture" src={require("../images/Subpages-images/roof.avif")} alt=""></img>
+                        <img className="main-page__picture" src={require("../images/Subpages-images/roof.avif")} alt="" width="550" height="550"></img>
                 </article>
             </div>
         </section>

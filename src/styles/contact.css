@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5rem;
+    padding: var(--space--m);
 }
 
 #ff-success {
@@ -47,7 +47,7 @@
     }
 
     #Publish1FAIpQLSfVlF43KcO1mhpO0I9EZcau2S7NZqhLsxsGEtVV1SbbHUft_w {
-        padding: 1.5rem;
+        padding: var(--space--m);
     }
 }
 

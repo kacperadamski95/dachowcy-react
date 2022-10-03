@@ -1,15 +1,15 @@
+.header {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: var(--color--primary);
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.header {
-    position: sticky;
-    z-index: 3;
-    top: 0;
-    background-color: var(--font-color--primary);
 }
 
 body {
@@ -24,17 +24,17 @@ body {
         padding-right: var(--space--xl);
     }
 
-    .menu_links {
+    .menu__links {
         display: none; 
     }
 
-    .logo-picture {
+    .logo {
         height: 8rem;
         width: 10rem;
         margin-top: var(--space--s);
     }
 
-    .hamburger--icon {
+    .menu__icon {
         height: 5.5rem;
         width: 5.5rem;
     }
@@ -72,8 +72,8 @@ body {
         opacity: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
+        justify-content: space-around;
         background-image: url('../images/Subpages-images/hidden-menu-background.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -86,30 +86,28 @@ body {
     }
 
     .menu-active a {
-        color: white;
+        color: var(--color--primary);
     }
 }    
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
     .menu-hidden,
-    .hamburger--icon,
+    .menu__icon,
     .icon--close {
         display: none;
     }
 
-    .logo-picture {
-        height: 12.5rem;
-        width: auto;
-        margin-left: 2rem;
+    .logo {
+        margin-left:var(--space--l);
     }
 
-    .menu_links a {
-        padding: 2.5rem;
-        font-size: 1.5vw;
+    .menu__links a {
+        padding:var(--space--xl);
+        font-size: 2.8rem;
     }
 
-    .menu_links a:last-of-type {
-        margin-right: 2.5rem;
+    .menu__links a:last-of-type {
+        margin-right:var(--space--xl);
     }
 }

@@ -1,6 +1,4 @@
-import React from 'react';
-//sliderDescription zmienię na sliderShortDescription - to będzie pod sliderem, a w sliderDescription wrzucę teksty, na podstronie wyświuetlam ifnroamcje z tego samego obiektu co SliderTile
-const SliderList = [
+const sliderData = [
     {sliderAnchorHref: ("/realization1"),
     sliderImages: [require("../images/Realizations-images/kwidzyn/kwidzyn1.jpg"),
                     require("../images/Realizations-images/kwidzyn/kwidzyn2.jpg"),
@@ -28,7 +26,7 @@ const SliderList = [
     sliderDescription: 'Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna'
     },
     {sliderAnchorHref: "./realization2",
-    sliderImages: [require("../images/Realizations-images/chelmno/chelmno1.jpg"),
+    sliderImages:[require("../images/Realizations-images/chelmno/chelmno1.jpg"),
                     require("../images/Realizations-images/chelmno/chelmno2.jpg"),
                     require("../images/Realizations-images/chelmno/chelmno3.jpg"),
                     require("../images/Realizations-images/chelmno/chelmno4.jpg"),
@@ -105,4 +103,4 @@ const SliderList = [
     }
 ]
  
-export default SliderList;
+export default sliderData;

@@ -4,24 +4,24 @@ import { useState } from 'react';
 
 
 const Header = () => {
-    const [toggle, setToggle] = useState(false)
+    const [toggle, isToggled] = useState(false)
     const body = document.querySelector("body");
     const hideElements = function() {
-        setToggle(false);
+        isToggled(false);
         body.classList.remove("menu-toggled");
     }
     const showElements = function() {
-        setToggle(true);
+        isToggled(true);
         body.classList.add("menu-toggled")
     }
 
     return (  
         <header className="header ">
-            <nav className="navigation">
+            <nav className="navigation" role="navigation">
                 <Link to="/Home" className="logo--link">
-                    <img className="logo-picture" src={require("../images/Header-images/LOGO-min.png")} alt="picture of logo"></img>
+                    <img className="logo" src={require("../images/Header-images/LOGO-min.png")} alt="logo firmy przedstawiające pracownika z młotkiem na dachu" height="125" width="auto"></img>
                 </Link>
-                <div className="menu_links">
+                <div className="menu__links">
                     <Link to="/Home">Strona Główna</Link>
                     <Link to="/Offer">Oferta</Link>
                     <Link to="Realizations">Realizacje</Link>
@@ -34,8 +34,8 @@ const Header = () => {
                     <Link to="/Contact" onClick={hideElements} className="contact--menu">Kontakt</Link>
                 </div>
 
-                <img onClick={hideElements} src={require("../images/Header-images/close-icon.png")} className={`${toggle === true ? 'icon--active' : '' } icon--close`} alt="close icon"></img>
-                <img onClick={showElements} src={require("../images/Header-images/hamburger-icon.png")} className={`${toggle === true ? 'icon--inactive' : '' } hamburger--icon`} alt="menu icon"></img>
+                <img onClick={hideElements} src={require("../images/Header-images/close-icon.png")} className={`${toggle === true ? 'icon--active' : '' } icon--close`} alt="ikonka zamknięcia menu" height="50" width="auto"></img>
+                <img onClick={showElements} src={require("../images/Header-images/hamburger-icon.png")} className={`${toggle === true ? 'icon--inactive' : '' } menu__icon`} alt="ikonka otwarcia menu" height="55" width="55"></img>
             </nav>
         </header>
     );

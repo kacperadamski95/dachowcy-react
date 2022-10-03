@@ -1,4 +1,3 @@
-//W tym pliku wyświetlam tylko to , co pokaże mi sie w console.log(props), które ustawiłem wcześniej w realizations.jsx
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -21,7 +20,9 @@ const SliderTile = (props) => {
                 to={props.realizationsLink}
                 className='realization__links'
             >
-                <img 
+                <img
+                    width="100%"
+                    height="auto"
                     src={props.arrayOfPictures[value]} 
                     alt={props.sliderImagesAlts[value]} 
                 />
