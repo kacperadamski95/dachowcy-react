@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react'; 
+import { useState } from 'react';
 
 
 const Header = () => {
     const [toggle, isToggled] = useState(false)
     const body = document.querySelector("body");
-    const hideElements = function() {
+    const hideElements = function () {
         isToggled(false);
         body.classList.remove("menu-toggled");
     }
-    const showElements = function() {
+    const showElements = function () {
         isToggled(true);
         body.classList.add("menu-toggled")
     }
 
-    return (  
+    return (
         <header className="header ">
             <nav className="navigation" role="navigation">
                 <Link to="/Home" className="logo--link">
@@ -27,18 +27,18 @@ const Header = () => {
                     <Link to="Realizations">Realizacje</Link>
                     <Link to="/Contact">Kontakt</Link>
                 </div>
-                <div className={`${toggle === true ? 'menu-active' : '' } menu-hidden`}>
+                <div className={`${toggle === true ? 'menu-active' : ''} menu-hidden`}>
                     <Link to="/Home" onClick={hideElements} className="home--menu">Strona główna</Link>
                     <Link to="/Offer" onClick={hideElements} className="offer--menu">Oferta</Link>
                     <Link to="/Realizations" onClick={hideElements} className="realizations--menu">Realizacje</Link>
                     <Link to="/Contact" onClick={hideElements} className="contact--menu">Kontakt</Link>
                 </div>
 
-                <img onClick={hideElements} src={require("../images/Header-images/close-icon.png")} className={`${toggle === true ? 'icon--active' : '' } icon--close`} alt="ikonka zamknięcia menu" height="50" width="auto"></img>
-                <img onClick={showElements} src={require("../images/Header-images/hamburger-icon.png")} className={`${toggle === true ? 'icon--inactive' : '' } menu__icon`} alt="ikonka otwarcia menu" height="55" width="55"></img>
+                <img onClick={hideElements} src={require("../images/Header-images/close-icon.png")} className={`${toggle === true ? 'icon--active' : ''} icon--close`} alt="ikonka zamknięcia menu" height="50" width="auto"></img>
+                <img onClick={showElements} src={require("../images/Header-images/hamburger-icon.png")} className={`${toggle === true ? 'icon--inactive' : ''} menu__icon`} alt="ikonka otwarcia menu" height="55" width="55"></img>
             </nav>
         </header>
     );
 }
- 
+
 export default Header;

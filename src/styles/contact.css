@@ -39,24 +39,7 @@
         width:90%;
     }
 
-    .contact {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        padding-left: var(--space--m);
-        padding-right: var(--space--m);
-    }
-
     #Publish1FAIpQLSfVlF43KcO1mhpO0I9EZcau2S7NZqhLsxsGEtVV1SbbHUft_w {
         padding: var(--space--m);
-    }
-}
-
-/* Desktop and tablet */
-@media only screen and (min-width: 769px) {
-    .contact {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        padding-left: var(--space--m);
-        padding-right: var(--space--m);
     }
 }

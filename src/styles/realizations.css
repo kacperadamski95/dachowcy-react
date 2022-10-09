@@ -2,6 +2,11 @@
   z-index: 1;
 }
 
+.realizations--images {
+  width: 100%;
+  height: auto;
+}
+
 #realizations p {
   text-align: center;
 }
@@ -20,11 +25,13 @@
 }
 
 .container img {
+  width: 100%;
+  height: auto;
   border-radius: 1rem 1rem 0rem 0rem;
   object-fit: cover;
 }
 
-.left__button {
+.left--button {
   width: 5rem;
   height: 5rem;
   padding: 0;
@@ -33,7 +40,7 @@
   z-index: 2;
 }
 
-.right__button {
+.right--button {
   width: 5rem;
   height: 5rem;
   padding: 0;
@@ -42,7 +49,7 @@
   z-index: 2;
 }
 
-.right__button svg {
+.right--button svg {
   padding-left: 0.3rem;
 }
 
@@ -60,7 +67,14 @@ button:active {
 }
 
 .background--realizations {
-  background-color: var(--color--primary);
+  background-color: #EEF2E6;
+}
+
+.background--realizations h1 {
+  font-size: var(--font-size--base);
+  background-color: #EEF2E6;
+  color: var(--color--secondary);
+  padding: var(--space--xxl);
 }
 
 
@@ -68,12 +82,12 @@ button:active {
 @media only screen and (max-width: 768px) {
   #realizations {
     padding-top: var(--space--xxl);
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     padding-left: var(--space--m);
     padding-right: var(--space--m);
   }
   
-  .slider--containter {
+  .slider {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,12 +102,12 @@ button:active {
     width: 95%;
   }
 
-  .buttons {
+  .slider__buttons {
     width: 100%;
   }
 
-  .left__button,
-  .right__button {
+  .left--button,
+  .right--button {
     top: 35%;
   }
 }
@@ -106,11 +120,11 @@ button:active {
     justify-content: center;
     align-items: center;
     width: 81%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     border-radius: 2rem;
   }
 
-  .slider--containter {
+  .slider {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -129,12 +143,12 @@ button:active {
     max-width: 60rem;
   }
 
-  .buttons {
+  .slider__buttons {
     width: 60rem;
   }
 
-  .left__button,
-  .right__button {
+  .left--button,
+  .right--button {
     top: 14rem;
   }
   

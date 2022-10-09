@@ -4,6 +4,11 @@ html {
     font-family: var(--font-family--primary), Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: 'Oz-Handicraft';
+    src: url(/fonts/serif/tt1178i.TTF) format('truetype');
+}
+
 *   {
     box-sizing: border-box;
     margin: 0;
@@ -15,13 +20,30 @@ h1 {
     color: var(--color--primary);
 }
 
+h3 {
+    font-weight: var(--font-weight--normal);
+}
+
+a {
+    text-decoration:none;
+    font-style: normal;
+}
+
 a:hover,
 a:focus,
-a:active {
+a:active,
+.address--links:hover {
     color: var(--logo-theme--color);
     cursor: pointer;
 }
 
+a:focus {
+    text-decoration: underline;
+}
+
+li::marker {
+    color: var(--logo-theme--color);
+}
 
 /* Mobile */
 @media only screen and (max-width: 768px) {

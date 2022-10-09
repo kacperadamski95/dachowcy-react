@@ -2,9 +2,8 @@ import React from 'react';
 const Home = () => {
     return (
         <>
-        <section id="home" className="main-page section--background">
-        <h1>O nas</h1>
-            <div className="main--container">
+            <section id="home" className="main-page section--background">
+                <h1>O nas</h1>
                 <article className="about-us">
                     <div className="text--information">
                         <p>Dachy to nasza specjalność. Remontujemy i budujemy dachy od wielu lat.
@@ -15,9 +14,9 @@ const Home = () => {
                             Nasze doświadczenie i jakość usług dokumentują zrealizowane inwestycje,
                             z których wybrane prezentujemy w zakładce realizacje.
                         </p>
-                        <br></br>
+                        <br />
                         <p>Oferujemy najwyższy poziom usług w zakresie:</p>
-                        <br></br>
+                        <br />
                         <ul>
                             <li>więźba dachowa – stawianie nowej więźby dachowej, remont, wymiana zużytych elementów</li>
                             <li>pokrycie dachowe - dachówka cementowa, ceramiczna, karpiówka, blachodachówka, blacha na rąbek,
@@ -30,10 +29,9 @@ const Home = () => {
                             <li>demontaż eternitu</li>
                         </ul>
                     </div>
-                        <img className="main-page__picture" src={require("../images/Subpages-images/roof.avif")} alt="" width="550" height="550"></img>
+                    <img className="main-page__picture" src={require("../images/Subpages-images/kwidzyn111.avif")} alt="" width="550" height="550"></img>
                 </article>
-            </div>
-        </section>
+            </section>
         </>
     );
 }

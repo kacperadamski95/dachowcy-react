@@ -1,4 +1,4 @@
-.offer__tiles > div:hover {
+.offer__tiles > article:hover {
     background-color: #EEF2E6;
     box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.9);
 }
@@ -24,7 +24,7 @@
     border-radius: 1rem;
 }
 
-.material--title {
+.tile__title {
     display: flex;
     align-items: center;
     padding-bottom: var(--space--s);
@@ -34,7 +34,7 @@
     padding-left: var(--space--xs);
 }
 
-#offer div> div > h2 {
+.tile__title h2 {
     font-weight: var(--font-weight--normal);
     padding-left: var(--space--m);
 }
