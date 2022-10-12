@@ -9,6 +9,8 @@ const realization1 = () => {
                 {sliderImages.map((src, index) => {
                     return (
                         <img
+                            width='100%'
+                            height='auto'
                             key={index}
                             src={src}
                             alt={sliderImagesAlts[index]}>
